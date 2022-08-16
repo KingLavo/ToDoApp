@@ -3,7 +3,7 @@
     body{
       margin: 0;
       padding: 0;
-      background-color: #e3e3e3de;
+      background-color: rgb(66, 64, 64);
       font-family: 'Quicksand','sans-serif';
     }
         .App{
@@ -67,6 +67,7 @@
     width: 95%;
     margin: -3rem auto;
   }
+   
   .outputDiv{
     width: 49%;
     margin: 4px auto;

@@ -7,7 +7,7 @@ const ListComponent = ({ data })=>{
             <div className="down">
                 <div className="ouputContainer">
                     { data.map((k)=>(
-                        <div key={k.id}>
+                        <div  key={k.id}>
                             <Link  className="outputDiv" to={`/post/${k.id}`}>
                                 <input type="checkbox" />
                                 <label>{k.todoData}</label>

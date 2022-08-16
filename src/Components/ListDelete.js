@@ -10,23 +10,24 @@ const ListDelete = () => {
     const { data } = useFetch('http://localhost:8000/post/' + id);
 
     const handleDelete = ()=>{
-            fetch('http://localhost:8000/post/' + id, {
+            fetch('http://localhost:8000/post/' + data.id, {
                 method: 'DELETE'
             }).then(()=>{
                 console.log(data)
                 navigate('/')
                 setIsPending(false)
+
             })
     
     }
     return ( 
         <div className="todo-delete">
             <h1>{`To do app ${ id }`}</h1>
-            { !isPending && <div>Loading...</div>}
+            { isPending && <div>Loading...</div>}
             { data && (
                 <div>
                     <div style={{color:'black'}}>{data.todoData}</div>
-                    <button>Deleted</button>
+                    <button onClick={handleDelete}>Deleted</button>
                 </div>
             )}
         </div>
