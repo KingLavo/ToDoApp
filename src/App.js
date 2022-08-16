@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import ToDo from "./Components/ToDo";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ListDelete from './Components/ListDelete';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+          <Routes>
+            <Route path="/" element={ <ToDo/>}/>
+            <Route path='/post/:id' element={<ListDelete/>}/>
+          </Routes>
+      </div>
+    </Router>
   );
 }
 
