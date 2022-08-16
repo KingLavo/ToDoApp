@@ -45,20 +45,17 @@
       background-size: cover;
     }
     .control input{
-      width: 95%;
+      width: 90%;
       display: block;
       margin: 2rem auto;
-      padding: 1.2rem;
+      padding: 1.8rem;
       border-radius: 3px;
-      /* font-size: 1.5rem; */
+      font-size: 1.2rem;
       color: whitesmoke;
       background-color:  rgb(49, 41, 41);
       outline: none;
       border: none;
     }
-    /* .button{
-      d;
-    } */
   ::placeholder{
     color: gray;
     font-size: 1rem;
@@ -92,10 +89,16 @@
     color: whitesmoke;
     text-transform: capitalize;
   }
+  .outputDiv a{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: gray;
+  }
    .bottom{
     width: 46%;
     margin: 3.4rem auto;
-    padding: 1.6rem;
+    padding: 1.5rem;
     background-color: rgb(49, 41, 41);
     border-radius: 3px;
     display: flex;

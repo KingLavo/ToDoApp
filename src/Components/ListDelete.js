@@ -1,32 +1,26 @@
 import useFetch from "./useFetch";
 import { useParams, useNavigate } from "react-router-dom";
-import { useState } from "react";
 
 const ListDelete = () => {
-    const [isPending, setIsPending ] = useState( true );
+     
     const{ id }= useParams();
     const navigate = useNavigate();
 
-    const { data } = useFetch('http://localhost:8000/post/' + id);
+    const { Data } = useFetch('http://localhost:8000/post/' + id);
 
     const handleDelete = ()=>{
-            fetch('http://localhost:8000/post/' + data.id, {
+            fetch('http://localhost:8000/post/' + id, {
                 method: 'DELETE'
             }).then(()=>{
-                console.log(data)
-                navigate('/')
-                setIsPending(false)
-
+                navigate('/');
             })
     
     }
     return ( 
         <div className="todo-delete">
-            <h1>{`To do app ${ id }`}</h1>
-            { isPending && <div>Loading...</div>}
-            { data && (
+            { Data && (
                 <div>
-                    <div style={{color:'black'}}>{data.todoData}</div>
+                    <div>{Data.todoData}</div>
                     <button onClick={handleDelete}>Deleted</button>
                 </div>
             )}

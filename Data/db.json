@@ -1,28 +1,8 @@
 {
   "post": [
     {
-      "todoData": "Pick Up kids from school",
+      "todoData": "Meet up with Dr kingsley",
       "id": 1
-    },
-    {
-      "todoData": "Send KIds Back to school ",
-      "id": 2
-    },
-    {
-      "todoData": "fuck with you faith",
-      "id": 3
-    },
-    {
-      "todoData": "love you ",
-      "id": 4
-    },
-    {
-      "todoData": "See my elder siter",
-      "id": 5
-    },
-    {
-      "todoData": "Sleep all night ",
-      "id": 6
     }
   ]
 }

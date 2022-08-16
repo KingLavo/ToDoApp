@@ -7,21 +7,19 @@ const useFetch = ( url ) => {
 
     fetch(url)
     .then(( res )=>{
-        console.log(res)
         if(!res.ok){
-            throw Error(res.statusText +" - "+ res.url)
+            throw Error("Cant fetch data for that resource")
         }
         return res.json()
     })
     .then((data)=>{
         setData(data)
-        console.log(data)
     })
     .catch((err)=>{
         if(err.name === 'AbortError'){
             console.log("Fetched aborted")
         }else{
-            console.log(err)
+            
         }
       
     }) 
