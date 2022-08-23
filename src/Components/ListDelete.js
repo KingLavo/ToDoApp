@@ -20,7 +20,7 @@ const ListDelete = () => {
         <div className="todo-delete">
             { Data && (
                 <div>
-                    <div>{Data.todoData}</div>
+                    <h1>{Data.todoData}</h1>
                     <button onClick={handleDelete}>Deleted</button>
                 </div>
             )}
