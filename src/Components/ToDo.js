@@ -9,7 +9,7 @@ const ToDo = () => {
     const { Data: data } = useFetch( url );
     
     return ( 
-        <div className="componenet">
+        <div className="component">
             <div className="todoForm">
                 <div className="container">
                      <TopContainer logo={logo}/>

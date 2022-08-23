@@ -3,11 +3,11 @@
     body{
       margin: 0;
       padding: 0;
-      background-color: gray;
       font-family: 'Quicksand','sans-serif';
     }
-        .App{
-      max-width: 100% ;
+    .component{
+      background-color: rgb(20, 18, 18);
+      min-height: 100vh;
     }
     .todoForm{
       height: 350px;
@@ -142,8 +142,12 @@
   margin-top: 3em;
   border: none;
   letter-spacing: 3px;
+  cursor: pointer;
 }
-
+.todo-delete div h3{
+  color: #333;
+  margin-top: 4rem;
+}
 
 img{
   display: none;
@@ -167,6 +171,9 @@ img{
     }
     .App{
       max-width: 100% ;
+    }
+    .component{
+      background-color: #e3e3e3de;
     }
     .todoForm{
       height: 350px;
